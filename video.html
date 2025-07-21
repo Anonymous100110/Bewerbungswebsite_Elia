@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Elia Cimirro</title>
+</head>
+<body>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+
+  <div id="nav"></div>
+
+  <div class="video-container">
+    <video autoplay loop>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>

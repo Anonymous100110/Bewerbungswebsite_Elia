@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Elia Cimirro</title>
+<body>
+  <script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+  <div id="nav"></div>
+  <section id="about" class="about-section">
+    <div class = aboutmeimg>
+      <img src="aboutmeimg.jpg" alt="Profilbild Elia Cimirro">
+    </div>
+    <div class="textabout">
+      <p>
+        Mein Name ist Elia Cimirro. Ich wurde am 2. September 2010 geboren, besuche die Sek A in Hombrechtikon ZH und lebe mit meinen Eltern und meinem älteren Bruder auf dem Land.
+        <br>
+        <br>
+        Vor meiner Schulzeit verbrachten wir als Familie zwischenzeitlich knapp zwei Jahre in den USA. Das Leben in West Lafayette, Indiana, war spannend und eine gute Erfahrung.
+        <br>
+        <br>
+        Zurück in der Schweiz wurde ich eingeschult. Ich trieb immer gerne Sport und spielte sieben Jahre Handball, zuletzt im Elite Team. Wegen der hohen zeitlichen Belastung wechselte ich zum Individualsport. Heute trainiere ich für meinen ersten Halbmarathon und halte so meine Ausdauer und Disziplin möglichst auf einem hohen Niveau. Nebenbei spiele ich Golf. Beides sind Hobbys, die mir ganz andere Perspektiven bieten und viel Spass bereiten.
+        <br>
+        <br>
+        Als jüngeres Kind spielte ich einige Jahre Klavier und entdeckte dann mein Passionsinstrument Schlagzeug – ein toller Ausgleich für mich.
+        <br>
+        <br>
+        Zeit mit meiner Familie und meinen Freunden ist mir ebenfalls sehr wichtig.
+        <br>
+        <br>
+        In der Sekundarschule faszinieren mich die mathematisch-technischen Fächer. Informatik begeistert mich, weil ich schon immer gerne mit Computern gearbeitet habe und gerne kreative Lösungen finde.
+        <br>
+        <br>
+        Durch mehrere Schnupperlehren bei Unternehmen wie Ergon, Netcetera, der KPMG oder auch der Ostschweizer Fachhochschule konnte ich Einblick in den Beruf des Informatikers gewinnen. Diese Erfahrungen haben meinen Wunsch bestärkt, in diesem Bereich zu arbeiten. Privat programmiere ich gerne kleinere Projekte wie z.B. diese Website. 
+        <br>
+        <br>
+        Ich freue mich darauf, meine schulische Laufbahn erfolgreich abzuschliessen und meinen Weg in der Informatik weiterzugehen. Mein Ziel ist es, eine Ausbildung als Informatiker zu beginnen und meine technischen Fähigkeiten stetig zu erweitern.
+    </div>
+  </section>
+</body>
+</html>
+

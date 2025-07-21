@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Elia Cimirro</title>
+<body class="stand">
+  <script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("nav").innerHTML = data);
+  </script>
+  <div id="nav"></div>
+  <section id="about" class="about-section">
+    <div class="textbox">
+      <h2>Hallo, ich bin</h2>
+      <h1 id="name">Elia</h1>
+      <h1 id="surname">Cimirro</h1>
+    </div>
+    <div class="picture">
+      <img src="indeximg.jpg" alt="Profilbild Elia Cimirro">
+    </div>
+  </section>
+</body>
+</html>
+

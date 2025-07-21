@@ -1,0 +1,152 @@
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color6);
+}
+
+.stand{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.fullwith{
+    width: 100vw;
+}
+
+.textbox{
+    padding: 8% 17% 5% 12%;
+    height: 100vw;
+    width: 25vw;
+}
+
+.textbox h2{
+    color: var(--color5);
+    white-space: nowrap;
+    font-size: 48px; 
+    margin-bottom: 0;
+}
+
+.textbox h1{
+    color: var(--color1);
+    font-size: 72px;
+    font-weight: bold;
+}
+
+#name{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+#surname{
+    margin-top: 6px;
+    text-align: center;
+}
+
+.picture img{
+    z-index: 1000;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.aboutmeimg img{
+    width: 50vw;
+}
+
+.textabout{
+    width: 85%;
+    height: 90%;
+    padding: 1vw;
+    margin: 2vw;
+    text-align: center;
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--color5);
+    background-color: var(--color1);
+}
+
+.about-section{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.video-container {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: calc(100vh - 48px); 
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-info{
+    width: calc(50vw - 10vw - 6px);
+    height: calc(100vh - 10vw - 48px - 6px);
+    margin: 2vw;
+    padding: 3vw;
+    background-color: var(--color1);
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--color5);
+}
+
+#contacth1{
+    margin: 2vw;
+    padding: 15px;
+    font-size: 72px;
+    color: var(--color5);
+    text-align: center;
+}
+
+.info-contact-text{
+    margin-top: 6vh;
+}
+
+p{
+    margin: 0;
+}
+
+@media (max-width: 750px){
+    body{
+        overflow-y: visible;
+    }
+    #about{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+    .textbox{
+        padding: 8% 20% 5% 15%;
+        width: 65vw;
+        height: 80vh;
+    }
+    .picture{
+        order: 2;
+        width: 100%;
+    }
+    .picture img {
+        width: 100vw;
+    }
+    #surname{
+        text-align: right;
+    }
+    .textbox h2{
+        width: 60vw;
+    }
+    .textbox h1{
+        width: 60vw;
+    }
+}
+
